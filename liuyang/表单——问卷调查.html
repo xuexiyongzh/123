@@ -1,0 +1,50 @@
+<!DECTYPE html>
+<html>
+    <body>
+        
+        <form method="GET" target="_blank" accept-charset="UTF-8" 
+        enctype="application/x-www-form-urlencoded" autocomple="on" novalidate 
+        style="color:black; background-color:azure; float: left; margin: 40px; 
+        padding: 20px" id="123">
+            <fieldset >
+                <legend align="center">广州大学学生食堂满意度调查</legend>
+            学校<br/>
+            <input type="text" name="school" value="广州大学" disabled><br/>
+            姓名<br/>
+            <input type="text" name="Name"><br/>
+            <input type="radio" name="sex" value="male">男<br/>
+            <input type="radio" name="sex" value="female">女<br/>
+            出生日期<br/>
+            <input type="date" name="bday"><br/>
+            学号<br/>
+            <input type="text" name="xuehao"><br/>
+            密码<br/>
+            <input type="password" name="psw"><br/>
+            常去的食堂<br/>
+            <input type="checkbox" name="shitang" value="梅苑">梅苑<br/>
+            <input type="checkbox" name="shitang" value="兰苑">兰苑<br/>
+            <input type="checkbox" name="shitang" value="竹苑">竹苑<br/>
+            <input type="checkbox" name="shitang" value="菊园">菊园<br/>
+            每餐花费<br/>
+            <input type="number" name="cost" min="0" max="20"><br/>
+            价格满意度<br/>
+            <input type="range" name="manyidu" min="0" max="10"><br/>
+            每日去饭堂的次数<br/>
+            <input list="times"/>
+            <datalist id="times">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                </datalist><br/>
+            联系方式<br/>
+            <input type="tel" required>
+            <hr/>    
+            <textarea name="suggest" cols="20" rows="5" placeholder="自己的意见或者建议"></textarea>
+            <br/>
+            <input type="button" value="提交" onclick="alert('感谢您的参与！')">
+            </fieldset>
+        </form>
+    </body>
+</html>
