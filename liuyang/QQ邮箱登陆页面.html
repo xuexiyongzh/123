@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>登陆qq邮箱</title>
@@ -10,16 +11,14 @@
                  height: 63px;
                  padding:0px 20px 0px 20px;
                  }
-        #link {height: 30px;
-                      width: 1143px;
-                      text-align: right;}
+        p.link {text-align: right;}
         #wenzi {float: left;
                 width: 520px;
                 height: 400px;
                 padding: 150px 150px 150px 300px;
                 line-height: 30px;
                 font-family: 'Times New Roman', Times, serif;}
-        #biaodan {width: 330px;
+        #biaodan {width: 330px; 
                   height: 336px;
                   float: left;
                   line-height: 30px;
@@ -30,10 +29,9 @@
     <body>
         <div id="header"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555390815372&di=c589f4b01479d9be34a7fd4432560333&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1805%2F14%2F11217086_89131499495108_thumb.jpg" alt="QQ邮箱" 
             width="120px" height="72px" style="float:left">
-            <p style="text-align:right"><a href="https://en.mail.qq.com/cgi-bin/loginpage">English</a>丨
+            <p class="link"><a href="https://en.mail.qq.com/cgi-bin/loginpage">English</a>丨
                      <a href="https://exmail.qq.com/cgi-bin/loginpage?action=get_location&t=new_index/index&referrer=index_top" target="_blank">企业邮箱</a>丨
-                     <a href="https://app.mail.qq.com/" target="_blank">手机版</a>
-        </p>
+                     <a href="https://app.mail.qq.com/" target="_blank">手机版</a></p>
     </div>
     <div id="wenzi">
         <h2 class="a">QQ邮箱,常联系！</h1>
@@ -50,7 +48,9 @@
             <input type="text" name="账号" placeholder="支持QQ号/邮箱/手机号登陆" maxlength="20"><br/><br/>
             <input type="password" name="密码" placeholder="QQ密码" maxlength="20"><br/><br/>
             <input type="checkbox" name="自动登录" value="开启">下次自动登录<br/>
-            <input type="button" value="登陆" onclick="alert('登陆成功！')">
+            <input type="button" value="  登陆  " onclick="alert('登陆成功！')">
+            <a href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=3.0&old_ver_account=" target="_blank">
+            <input type="button" value="忘记密码"></a>
         </fieldset>
     </form>
     </div>
