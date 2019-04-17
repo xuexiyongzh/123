@@ -10,14 +10,14 @@
  
  <p>hah   ha      hoh oho      lalalal</p > 
  
- <form>
+ <form autocomplete="on">
  <fieldset>
  first name:<br/>
- <input type="text" name="first name"><br/>
+ <input type="text" name="first name" value="lin" readonly><br/>
  last name:<br/>
- <input type="text" name="last name"><br/>
+ <input type="text" name="last name" maxlength="2" autofocus><br/>
  user password:<br/>
- <input type="password" name="password">
+ <input type="password" name="password" required>
  </form>
  
  <form>
@@ -37,11 +37,11 @@
  <option value="sheep">sheep</option>
  </select>
  
- <input type="submit" value="提交">
+ <input type="submit" formtarget="_blank" value="提交">
  </fieldset>
  </form> 
  
- <textarea name="message" row="10" cols="30">
+ <textarea name="message" row="10" cols="40">
  my pet  was playing in the garden
  </textarea>
  
@@ -50,7 +50,6 @@
  <button type="button" onclick="alert('you are dead!')">不要点我呀!!</button>
  
  <br/>
- <form action="action_page.php">
  <input list="browsers">
  <datelist id="browsers">
     <option value="internet explorer">
@@ -61,10 +60,47 @@
  </form>
  
  <form>
-   quantity (between 1 and 5):
+   quantity (between 1 and 99):
    <input type="number" name="quantity" min="1" max="99">
    <input type="submit" value="click">
  </form>   
+ 
+ <form>
+ select your favorite color:
+ <input type="color" name="favorite color">
+ </form>
+ 
+ <form>
+ point: 0
+ <input type="range" name="point" min="0" max="99">
+ 99
+ <input type="submit">
+ </form>
+ 
+ <form>
+ birthday
+ <input type="month" name="birthday"><br>
+ <input type="tel" name="tel"><br>
+ <input type="url" name="url"><br>
+ </form>
+ 
+ <form>
+ <input type="date" name="day"><br>
+ <input type="week" name="week"><br>
+ <input type="time" name="time">
+ </form>
+ 
+ <form>
+ <input type="datetime-local" name="datetime"><br>
+ <input type="email" name="email"><br>
+ <input type="search" name="search">
+ </form>
+ 
+ <form>
+ <input type="text" name="lll" value="lin" size="50" disabled><br/>
+ 选择图片:<input type="file" name="file"  />
+ <input type="submit">
+ </form>
  
  </body> 
  </html>
