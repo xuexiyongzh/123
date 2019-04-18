@@ -4,8 +4,28 @@
         <title>音频练习</title>
     </head>
 <body>
-    <embed height="100" width="100" src="/audio/sasabune.mp3"></embed>
-    <object height="100" width="100" data="/audio/sasabune.mp3" type=""></object>
-    未完待续。。。
+    <p>使用embed元素</p>
+    <embed height="100" width="100" src="audio/sasabune.mp3"></embed>
+    <p>使用object元素</p>
+    <object height="100" width="100" data="audio/sasabune.mp3"></object>
+    <p>使用HTML5的audio元素（多种格式可防止浏览器不支持）</p>
+    <audio controls="controls">
+        <source src="audio/sasabune.mp3" type="audio/mp3">
+        <source src="audio/sasabune.ogg" type="audio/ogg">
+    </audio>
+    <p>最好的解决办法（添加多个播放器）</p>
+    <audio controls="controls" height="100" width="100">
+        <source src="audio/sasabune.mp3" type="audio/mp3">
+        <source src="audio/sasabune.ogg" type="audio/ogg">
+    <embed src="audio/sasabune.mp3" herght="100" width="100">
+    </audio>
+    <article>
+    <p>使用雅虎媒体播放器</p>
+    <p><a href="audio/sasabune.mp3">播放MP3</a></p>
+    <p><a href="audio/sasabune.ogg">播放OGG</a></p>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+    </article> 
+    <p>使用超链接</p>
+    <a href="audio/sasabune.mp3">Play the sound</a>
 </body>
 </html>
