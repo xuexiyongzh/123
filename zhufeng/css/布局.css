@@ -1,0 +1,16 @@
+#header {
+    background-color: rgb(146, 29, 29);
+    color: rgb(180, 159, 159);
+    text-align: center;
+    padding-top:450px;
+    padding-left: 80px;
+    padding-right: 80px;
+    float: left;
+    min-height: 700px;
+    line-height:30px;}
+#field {
+    background-color: rgba(207, 204, 204, 0.6);
+    float: right;
+    margin-right: 25%;
+    margin-top: 15%;
+}
