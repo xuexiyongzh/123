@@ -8,9 +8,32 @@
     float: left;
     min-height: 700px;
     line-height:30px;}
+    
 #field {
     background-color: rgba(207, 204, 204, 0.6);
     float: right;
     margin-right: 25%;
     margin-top: 15%;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+fieldset {
+    border-color: aliceblue;
+    border-radius: 13px;
+    width: 230px; 
+    padding:30px;
+}
+
+.login:hover {
+    background-color: rgb(216, 68, 68);
+
+}
+
+.login:active {
+    background-color: rgb(146, 29, 29);
+    color:rgb(180, 159, 159);
 }

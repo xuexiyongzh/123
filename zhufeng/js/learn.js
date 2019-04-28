@@ -31,5 +31,5 @@ add(2)
 console.log(c);
 
 
-//求和函数
+
 
