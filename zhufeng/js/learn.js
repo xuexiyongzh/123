@@ -30,6 +30,14 @@ function add(x) {
 add(2)
 console.log(c);
 
+var para = "我说：“今天天气真好！”"
+console.log(para);
+
+function myFunction() {
+    let x=document.getElementById("new");//找到元素
+    x.innerHTML="科学不代表只有实验而没有人情";//改变元素
+}
+
 
 
 
