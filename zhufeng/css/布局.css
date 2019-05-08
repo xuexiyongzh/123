@@ -37,3 +37,7 @@ fieldset {
     background-color: rgb(146, 29, 29);
     color:rgb(180, 159, 159);
 }
+
+body {
+    background-repeat: no-repeat;
+}
