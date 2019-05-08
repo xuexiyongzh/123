@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自制计算器</title>
+    <style type="text/css">
+    
+    body {
+        width: 247px;
+        margin:auto;
+    }
+
+    input {
+        font-size: 22px;
+        direction: rtl;  /*文字居右*/
+        outline: none;   /*点击时外围无蓝边*/
+        width: 242px;
+        height: 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+
+    button {
+        font-size: 22px;
+        outline: none;
+        width: 58px;
+        height: 58px;
+        margin-top: 5px;
+        border-radius: 8px;
+    }
+
+    button:hover {}
+
+    button:active {}
+
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <div style="position:absolute">  <!--将整个div的位置设置wei绝对位置-->
+        <input type="text">
+        <div style="margin-top:10px">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+            </div>
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+            </div>
+            <div>
+                <button>0</button>
+                <button>.</button>
+                <button>/</button>
+                <button>←</button>
+            </div>
+            <div>
+                <button>C</button>
+                <button style="width: 120px">=</button>
+            </div>
+    </div>
+</body>
+</html>
