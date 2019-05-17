@@ -14,7 +14,7 @@
 
     input {
         font-size: 22px;
-        direction: rtl;  /*文字居右*/
+        direction: ltr;  /*文字居右*/
         outline: none;   /*点击时外围无蓝边*/
         width: 242px;
         height: 30px;
@@ -37,38 +37,67 @@
 
     </style>
     <script>
+        function onload() {
+            document.getElementById("input").focus();
+        }
+
+        //读取按钮信息，传给输入框
+        function inputEvent(e) {
+            var val = e.innerHTML;
+            var xsval = document.getElementById("input");
+            xsval.value += val;
+        }
+
+         //计算出结果
+         function inputOper() {
+            var xsval = document.getElementById("input");
+            xsval.value = eval(document.getElementById("input").value);        //将字符串转换成数字运行
+        }
+
+        //清零
+        function clearNum() {
+            var xsval = document.getElementById("input");
+            xsval.value = "";
+            document.getElementById("input").focus();
+        }
+
+        //退格
+        function backNum() {
+            var arr = document.getElementById("input");
+            arr.value = arr.value.substring(0,arr.value.length-1);
+        }
     </script>
 </head>
 <body>
     <div style="position:absolute" onload="onload()">  <!--将整个div的位置设置wei绝对位置-->
-        <input type="number" id="input">
+        <input id="input" type="text">
         <div style="margin-top:10px">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <button onclick="inputEvent(this)">1</button>
+                <button onclick="inputEvent(this)">2</button>
+                <button onclick="inputEvent(this)">3</button>
+                <button onclick="inputEvent(this)">+</button>
             </div>
             <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <button onclick="inputEvent(this)">4</button>
+                <button onclick="inputEvent(this)">5</button>
+                <button onclick="inputEvent(this)">6</button>
+                <button onclick="inputEvent(this)">-</button>
             </div>
             <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
+                <button onclick="inputEvent(this)">7</button>
+                <button onclick="inputEvent(this)">8</button>
+                <button onclick="inputEvent(this)">9</button>
+                <button onclick="inputEvent(this)">*</button>
             </div>
             <div>
-                <button>0</button>
-                <button>.</button>
-                <button>/</button>
-                <button>←</button>
+                <button onclick="inputEvent(this)">0</button>
+                <button onclick="inputEvent(this)">.</button>
+                <button onclick="inputEvent(this)">/</button>
+                <button onclick="backNum()">←</button>
             </div>
             <div>
-                <button>C</button>
-                <button style="width: 120px">=</button>
+                <button onclick="clearNum()">C</button>
+                <button style="width: 120px" onclick="inputOper(this)">=</button>
             </div>
     </div>
 </body>
